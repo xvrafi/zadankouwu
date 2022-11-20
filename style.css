@@ -1,64 +1,83 @@
 *{
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+  }
+body{
+    background-color: rgb(118, 161, 67);
 }
 
-.gora{
-    background-color: wheat;
+div.baner{
+    background-color: rgb(54, 54, 88);
+    color: white;
+    font-size: 120%;
+    height: 10%;
     text-align: center;
-    
-    width: 100%;
-    height: 3rem;
+    grid-area: baner;
 }
 
-.lewo h4{
-    font-size: 25px;
-}
-
-.lewo h5{
-    font-size: 30px;
-}
-
-.lewo a{
-    font-size: 40px;
-}
-.lewo{
-    background-color: rgb(66, 131, 151);
-    text-align: center;
-    
+.panel-lewy{
+    background-color: rgb(118, 161, 67);
     width: 50%;
-    height: 850px;
-    max-width: 1260px;
-    min-width: 780;
-    margin: 0 auto;
-    font-size: 19px;
-    float: left;
+    height: 70%;
+    text-align: center;
+    grid-area: panel-lewy;
 }
 
-.prawo{
-    background-color: rgb(66, 131, 151);
+.panel-prawy{
+    background-color: rgb(118, 161, 67);
+    width: 60%;
+    height: 70%;
+    font-size: 15px;
+    padding-top: 10px;
+    grid-area: panel-prawy;
+}
+div.panel-prawy ol{
+    padding-left: 30px;
+}
+div.panel-prawy p{
+    color:rgb(100, 56, 141);
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Tahoma';
     text-align: center;
-    
-    width: 50%;
-    height: 850px;
-    max-width: 1260px;
-    min-width: 780;
-    margin: 0 auto;
-    float: left;
-}
-.prawo h4{
-    font-size: 25px;
-}
-.prawo a{
-    font-size: 40px;
-}
-.stoopka{
-    background-color: aqua;
-    float: none;
-    text-align: center;
-    
-    height: 100%;
-    clear: both;
 }
 
+div.stopka{
+    background-color: rgb(85, 57, 114);
+    color: white;
+    text-align: center;
+    font-size: 120%;
+    font-family: Tahoma;
+    height:10%;
+    padding: 10px;
+    grid-area: stopka;
+}
+
+.panel-lewy table th{
+    width:50%;
+    background-color: rgb(99, 57, 64);
+    color: white;
+    border: 2px solid black;
+    text-align: center;
+    padding: 10px;
+}
+div div.panel-lewy table td{
+    color:black;
+    text-align: center;
+    border: 2px solid black;
+    padding: 10px;
+
+}
+
+.obramka{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "baner baner baner baner"
+    "panel-lewy panel-lewy panel-prawy panel-prawy"
+    "panel-lewy panel-lewy panel-prawy panel-prawy"
+    "stopka stopka stopka stopka";
+
+}
